@@ -86,3 +86,14 @@ alias la="ls -ltra"
 alias lr="ls -ltr" 
 alias grep="grep --color"
 alias pstree="pstree -A"
+
+# something I add
+autoload -U compinit
+compinit
+
+HISTFILE=~/.zsh_history
+HISTSIZE=6000000
+SAVEHIST=6000000
+setopt hist_ignore_dups
+setopt share_history
+
