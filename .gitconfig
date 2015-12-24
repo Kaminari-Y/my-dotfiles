@@ -1,0 +1,42 @@
+[core]
+    excludesfile = ~/.gitignore
+    pager = ${DIFF_HIGHLIGHT:-cat} | less
+    quotepath = false
+    precomposeunicode = true
+
+[pager]
+    log  = ${DIFF_HIGHLIGHT:-cat} | less
+    show = ${DIFF_HIGHLIGHT:-cat} | less
+    diff = ${DIFF_HIGHLIGHT:-cat} | less
+
+[color]
+    ui = auto
+
+[alias]
+    st = status
+    co = checkout
+    ci = commit
+    df = difftool
+    br = branch
+    rb = rebase	
+    tree = log --graph --date-order --all --pretty=format:'%h %Cred%d %Cgreen%ad %Cblue%cn %Creset%s' --date=short
+
+[help]
+    autocorrect = 1
+
+[push]
+    default = simple 
+
+[user]
+    name = rai.gu
+    email = rai.gu@lac.co.jp 
+    
+[diff]
+    tool = vimdiff
+    algorithm = histogram
+
+[difftool]
+    prompt = false
+
+[ghq]
+    root = ~/src
